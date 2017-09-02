@@ -1,0 +1,1 @@
+1、application.properties与application.yml任取其一
