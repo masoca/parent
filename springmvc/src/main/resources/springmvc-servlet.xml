@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans 
+       http://www.springframework.org/schema/beans/spring-beans.xsd 
+       http://www.springframework.org/schema/context 
+       http://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/mvc
+       http://www.springframework.org/schema/mvc/spring-mvc.xsd
+       ">
+       
+
+	
+
+	<bean
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="viewClass"
+			value="org.springframework.web.servlet.view.JstlView" />
+		<property name="prefix" value="/WEB-INF/jsp/" />
+		<property name="suffix" value=".jsp" />
+	</bean>
+		
+		
+	<context:component-scan base-package="com.msc.test.springmvc" />
+	
+	<mvc:interceptors>
+	    <mvc:interceptor>
+	         <mvc:mapping path="/**/*.do"/><!-- 拦截所有以.do结尾的请求，包括一级目录请求test.do、二级目录/a/test.do、三级/a/b/test.do -->
+	         <mvc:exclude-mapping path="/tologin.do"/>
+	         <bean class="com.msc.test.springmvc.interceptor.TestInterceptor"></bean>
+	    </mvc:interceptor>
+	</mvc:interceptors>
+		
+
+</beans>

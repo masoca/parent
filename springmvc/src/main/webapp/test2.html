@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript">
+	    window.onload=function(){
+	    	document.getElementById("a_test1").setAttribute("href", window.document.referrer);
+	  	}
+	</script>
+
+
+</head>
+<body>
+    <h1>test2.html</h1>
+    window.document.referrer : 
+    <script type="text/javascript">
+		document.write(window.document.referrer); 
+	</script>
+	<hr>
+	<a id="a_test1" href="">test1.html</a>
+	
+	<script type="text/javascript">
+		document.getElementById("a_test1").setAttribute("href", window.document.referrer);
+	</script>
+	
+	${lxy}
+</body>
+</html>
