@@ -1,1 +1,1 @@
-1、application.properties与application.yml任取其一
+1、application.yml可用application.properties替换

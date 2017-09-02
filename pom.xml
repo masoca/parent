@@ -29,6 +29,7 @@
         <module>./springboot</module>
         <module>./springmvc</module>
         <module>./springmvc_noxml</module>
+        <module>ch3</module>
     </modules>
 
     <build>

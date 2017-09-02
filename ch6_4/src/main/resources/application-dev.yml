@@ -1,0 +1,6 @@
+
+logging:
+  file: D:/mylog/che6_4_dev.log
+  level: debug
+server:
+  port: 8888

@@ -1,0 +1,8 @@
+author:
+  name: msc
+  age: 25
+logging:
+  file: D:/mylog/che6_2_3.log
+  level:
+    org.springframework.web: info
+    com.msc.demo.ch6_2_3: info

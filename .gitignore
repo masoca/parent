@@ -30,6 +30,6 @@ hs_err_pid*
 
 springmvc/src/test/resources/
 
-mvnm*
+mvn*
 
 .mvn
